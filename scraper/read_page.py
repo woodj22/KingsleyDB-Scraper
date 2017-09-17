@@ -7,4 +7,3 @@ def get_contents():
     contents = page.content
     print(contents)
 
-get_contents()
