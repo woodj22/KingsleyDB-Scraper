@@ -1,8 +1,11 @@
-import scraper.read_page as Page
+import scraper.reader as Page
+
 
 def cli():
-    content = Page.get_contents()
-    print(content)
+    contents = Page.get_page_contents()
+    tags = Page.get_tags(contents, 'h1')
+    print(tags)
+
 
 if __name__ == "__main__":
     cli()
