@@ -11,8 +11,15 @@ def get_page_contents():
 def get_tags(contents, tags):
     soup = BeautifulSoup(contents, "lxml")
     return soup.find(tags).get_text().split(' ')
-    # data = [element.text.split(' ') for element in soup.find_all(tags)]
-    #
-    # exit(data)
-    # return data
 
+
+def get_tag_list(contents):
+    soup = BeautifulSoup(contents, "lxml")
+
+    nameTags = soup.find_all(text=True)
+    data = []
+    for tags in nameTags:
+        data.append(tags)
+        print(tags)
+    exit(nameTags)
+    return nameTags

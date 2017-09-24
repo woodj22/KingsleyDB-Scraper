@@ -1,4 +1,4 @@
-import scraper.reader as Page
+import kingsley_scraper.scraper.reader as Page
 
 
 def cli():
