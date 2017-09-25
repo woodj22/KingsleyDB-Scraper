@@ -24,11 +24,12 @@ class ReaderUnitTest(unittest.TestCase):
         self.assertListEqual(expected_result, actual_result)
 
 
-    def test_get_tag_list_returns_a_list_of_all_tags_in_the_string(self):
+    def test_get_tag_strings_returns_a_list_of_tuples_containing_tag_and_string(self):
         sentance_string = "tiger lays low in the dirty forest"
-        content = html.unescape("<html><h1><h3><h2>saf</h2></h3></h1></html>")
-        actual_result = reader.get_tag_list(content)
-        expected_result = ['html', 'h1', 'h2', 'h3']
+        content = html.unescape("<html><h1>"+sentance_string+"<h3><h2>saf</h2></h3></h1></html>")
+        actual_result = reader.get_tag_strings(content)
+        expected_result = [('h1', ['tiger', 'lays', 'low', 'in', 'the', 'dirty', 'forest']), ('h2', ['saf'])]
+
         self.assertListEqual(expected_result, actual_result)
 
 

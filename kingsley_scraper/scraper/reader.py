@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 
-
 def get_page_contents():
 
     page = requests.get('https://www.bbc.co.uk')
@@ -13,13 +12,11 @@ def get_tags(contents, tags):
     return soup.find(tags).get_text().split(' ')
 
 
-def get_tag_list(contents):
+def get_tag_strings(contents):
     soup = BeautifulSoup(contents, "lxml")
+    elements = soup.find_all(text=True)
+    return [(element.parent.name, element.split(' ')) for element in elements]
 
-    nameTags = soup.find_all(text=True)
-    data = []
-    for tags in nameTags:
-        data.append(tags)
-        print(tags)
-    exit(nameTags)
-    return nameTags
+
+def create_entry(text, tag_name):
+    print((text, tag_name))
