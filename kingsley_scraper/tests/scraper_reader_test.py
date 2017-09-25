@@ -32,4 +32,12 @@ class ReaderUnitTest(unittest.TestCase):
 
         self.assertListEqual(expected_result, actual_result)
 
+    def test_get_tag_singular_string_returns_a_list_of_tuples_containing_a_tag_string_pair(self):
+        sentance_string = "tiger lays"
+        content = html.unescape("<html><h1>" + sentance_string + "<h3><h2>saf</h2></h3></h1></html>")
+        actual_result = reader.get_tag_to_singular_string(content)
+        expected_result = [('h1','tiger'),('h1', 'lays'), ('h2', ['saf'])]
+
+        self.assertListEqual(expected_result, actual_result)
+
 

@@ -14,6 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/KingsleyDB-Scraper$Unittest_ReaderUnitTest_test_get_tag_singular_string_returns_a_list_of_tuples_containing_a_tag_string_pair.coverage" NAME="Unittest ReaderUnitTest.test_get_tag_singular_string_returns_a_list_of_tuples_containing_a_tag_string_pair Coverage Results" MODIFIED="1506374036357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kingsley_scraper/tests" />
     <SUITE FILE_PATH="coverage/KingsleyDB-Scraper$Unittests_in_ReaderUnitTest.coverage" NAME="Unittests in ReaderUnitTest Coverage Results" MODIFIED="1506373749748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kingsley_scraper/tests" />
     <SUITE FILE_PATH="coverage/KingsleyDB-Scraper$__main__.coverage" NAME="__main__ Coverage Results" MODIFIED="1506176932065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -23,11 +24,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="reader.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="reader.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kingsley_scraper/scraper/reader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+            <state relative-caret-position="250">
+              <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -45,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scraper_reader_test.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="scraper_reader_test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kingsley_scraper/tests/scraper_reader_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="30" column="92" lean-forward="false" selection-start-line="30" selection-start-column="92" selection-end-line="30" selection-end-column="92" />
+            <state relative-caret-position="310">
+              <caret line="40" column="8" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -70,6 +71,7 @@
     <findStrings>
       <find>.ide</find>
       <find>get</find>
+      <find>test_get_tag_singular_string_returns_a_list_of_tuples_containing_a_tag_string_pair</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -86,8 +88,8 @@
         <option value="$PROJECT_DIR$/scraper/reader.py" />
         <option value="$PROJECT_DIR$/tests/scraper_reader_test.py" />
         <option value="$PROJECT_DIR$/kingsley_scraper/__init__.py" />
-        <option value="$PROJECT_DIR$/kingsley_scraper/scraper/reader.py" />
         <option value="$PROJECT_DIR$/kingsley_scraper/tests/scraper_reader_test.py" />
+        <option value="$PROJECT_DIR$/kingsley_scraper/scraper/reader.py" />
       </list>
     </option>
   </component>
@@ -147,7 +149,7 @@
       <recent name="$PROJECT_DIR$/kingsley_scraper" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in ReaderUnitTest">
+  <component name="RunManager" selected="Python tests.Unittest ReaderUnitTest.test_get_tag_singular_string_returns_a_list_of_tuples_containing_a_tag_string_pair">
     <configuration default="false" name="__main__" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -182,6 +184,29 @@
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_CLASS" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest ReaderUnitTest.test_get_tag_singular_string_returns_a_list_of_tuples_containing_a_tag_string_pair" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/kingsley_scraper/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="KingsleyDB-Scraper" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kingsley_scraper/tests/scraper_reader_test.py" />
+      <option name="CLASS_NAME" value="ReaderUnitTest" />
+      <option name="METHOD_NAME" value="test_get_tag_singular_string_returns_a_list_of_tuples_containing_a_tag_string_pair" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <option name="PUREUNITTEST" value="true" />
@@ -397,14 +422,16 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python.__main__" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in ReaderUnitTest" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest ReaderUnitTest.test_get_tag_singular_string_returns_a_list_of_tuples_containing_a_tag_string_pair" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in ReaderUnitTest" />
-        <item index="1" class="java.lang.String" itemvalue="Python.__main__" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest ReaderUnitTest.test_get_tag_singular_string_returns_a_list_of_tuples_containing_a_tag_string_pair" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in ReaderUnitTest" />
+        <item index="2" class="java.lang.String" itemvalue="Python.__main__" />
       </list>
     </recent_temporary>
   </component>
@@ -422,6 +449,9 @@
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="Unittest_ReaderUnitTest_test_get_tag_singular_string_returns_a_list_of_tuples_containing_a_tag_string_pair - 2017.09.25 at 22h 13m 56s.xml">
+      <configuration name="Unittest ReaderUnitTest.test_get_tag_singular_string_returns_a_list_of_tuples_containing_a_tag_string_pair" configurationId="tests" />
+    </history-entry>
     <history-entry file="Unittests_in_ReaderUnitTest - 2017.09.25 at 22h 09m 10s.xml">
       <configuration name="Unittests in ReaderUnitTest" configurationId="tests" />
     </history-entry>
@@ -525,20 +555,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kingsley_scraper/scraper/reader.py">
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2016.3/python_stubs/-1665691696/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        <state relative-caret-position="148">
+          <caret line="3575" column="8" lean-forward="false" selection-start-line="3575" selection-start-column="8" selection-end-line="3575" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kingsley_scraper/tests/scraper_reader_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="40" column="8" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kingsley_scraper/tests/scraper_reader_test.py">
+    <entry file="file://$PROJECT_DIR$/kingsley_scraper/scraper/reader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="30" column="92" lean-forward="false" selection-start-line="30" selection-start-column="92" selection-end-line="30" selection-end-column="92" />
+        <state relative-caret-position="250">
+          <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
