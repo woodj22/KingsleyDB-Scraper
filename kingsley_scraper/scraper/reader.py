@@ -7,11 +7,6 @@ def get_page_contents():
     return page.text
 
 
-def get_tags(contents, tags):
-    soup = BeautifulSoup(contents, "lxml")
-    return soup.find(tags).get_text().split(' ')
-
-
 def get_tag_strings(contents):
     soup = BeautifulSoup(contents, "lxml")
     elements = soup.find_all(text=True)

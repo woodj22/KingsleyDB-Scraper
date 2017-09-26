@@ -26,16 +26,16 @@ class ReaderUnitTest(unittest.TestCase):
 
 
     def test_get_tag_strings_returns_a_list_of_tuples_containing_tag_and_string(self):
-        sentance_string = "tiger lays low in the dirty forest"
-        content = html.unescape("<html><h1>"+sentance_string+"<h3><h2>saf</h2></h3></h1></html>")
+        sentence_string = "tiger lays low in the dirty forest"
+        content = html.unescape("<html><h1>"+sentence_string+"<h3><h2>saf</h2></h3></h1></html>")
         actual_result = reader.get_tag_strings(content)
         expected_result = [('h1', ['tiger', 'lays', 'low', 'in', 'the', 'dirty', 'forest']), ('h2', ['saf'])]
 
         self.assertListEqual(expected_result, actual_result)
 
     def test_retrieve_tag_and_weight_returns_a_list_of_tuples_containing_a_weight_string_pair(self):
-        sentance_string = "tiger lays"
-        content = html.unescape("<html><h1>" + sentance_string + "<h3><h2>saf</h2></h3></h1></html>")
+        sentence_string = "tiger lays"
+        content = html.unescape("<html><h1>" + sentence_string + "<h3><h2>saf</h2></h3></h1></html>")
         actual_result = reader.retrieve_tag_and_weights(content)
 
         expected_result = [('tiger', reader.tag_weight('h1')), ('lays', reader.tag_weight('h1')), ('saf', reader.tag_weight('h2'))]
