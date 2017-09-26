@@ -5,11 +5,12 @@ import html
 
 
 class ReaderUnitTest(unittest.TestCase):
-    def test_get_tags_returns_an_array_of_strings_in_the_tag(self):
-        sentance_string = "tiger lays low in the dirty forest"
-        content = html.unescape('<html> <h1>'+sentance_string+'</h1></html>')
-        actual_result = reader.get_tags(content, 'h1')
-        expected_result = sentance_string.split(' ')
+    def test_retrieve_tag_and_weights_returns_an_array_of_strings_in_the_tag(self):
+        sentence_string = "tiger lays low in the dirty forest"
+        content = html.unescape('<html><h1>'+sentence_string+'</h1></html>')
+        h1_weight = reader.tag_weight('h1')
+        actual_result = reader.retrieve_tag_and_weights(content)
+        expected_result = [(word, h1_weight) for word in sentence_string.split(' ')]
 
         self.assertListEqual(expected_result, actual_result)
 
